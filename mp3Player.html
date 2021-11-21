@@ -1,0 +1,44 @@
+<!--구현 가능 기능-->
+<!--1. a 태그 이용 mp3 경로 주기-->
+<!--2. 클릭 하면 재생-->
+<!--3. iframe을 사용하면 mp3 파일 링크로 이동하지 않고 음악을 재생 가능  -->
+<!--4. iframe 내부에 다른 사이트 띄우기-->
+<!--<iframe src = "http://www.dcinside.com">iframe 1</iframe>-->
+
+
+
+
+<!--업데이트 예정 기능-->
+<!--1. 플레이리스트 자동생성(mp3 폴더에 있는 mp3 파일명을 리스트에 보여줌)-->
+<!--2. 리스트 보여주고 클릭시 재생-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    iframe {
+        width:100vw;
+        height: 30vh;
+    }
+</style>
+
+
+<ul>
+    <li   ><a target ="player_div" href = "http://localhost:5555/day011/mp3/aaa.mp3">aaa</a></li>
+</ul>
+
+<!--<div id = "player_div">asdfasfads-->
+
+<!--</div>-->
+
+<iframe name = "player_div">iframe 1</iframe>
+<iframe src = "http://www.dcinside.com">iframe 1</iframe>
+
+
+</body>
+
+</html>
