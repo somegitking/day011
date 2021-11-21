@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous">
+
+    </script>
+</head>
+<body>
+
+
+
+<button id="testBtn">Test</button>
+
+
+<script>
+//******이 소스 코드 포인트******
+// 1. ready() Evnet는 DOMContentLoaded보다 먼저 실행됩니다.
+// 2. DOMContentLoaded는 Event가 한 번만 발생하며. ready() Evnet는 계속 발생합니다.
+// 3. 핸들링 하고자 하는 태그를 스크립트 전/후로 배치해 볼것
+
+//1. 버튼 태그의 스크립트 전후 상관 없이 작동함
+// $(document).ready(function() {
+//     $("#btn").on("click", (e)=> {
+//         alert("click")
+//     })
+// })
+
+
+//1. 버튼 태그의 스크립트 전후 상관 없이 작동함
+// $(function() {
+//     $("#btn").on("click", (e)=> {
+//         alert("click")
+//     })
+// })
+
+
+
+//1. 버튼 태그가 스크립트 앞쪽에 배치하면 동작
+//2. 버튼 태그가 스크립트 뒷쪽에 배치하면 동작 안함. 버튼 보다 스크립트가 앞쪽에 있으면 버튼을 인식 못함
+    $("#btn").on("click", (e)=> {
+            alert("click")
+        })
+
+//1. id가 testBtn 인 것에 대해서 클릭 이벤트가 발생하면 {} 안의 내용을 실행
+document.querySelector("#testBtn").addEventListener("click", function(e){
+    console.log(e)
+}, false)
+
+
+
+</script>
+
+
+<button id = "btn" >CLICK</button>
+
+</body>
+</html>

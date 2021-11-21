@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<style>
+    .red {
+        color: red;
+        width: 300px;
+        background-color: gray;
+        height: 20vh;
+    }
+</style>
+
+
+<h1>AAA</h1>
+<h1>AAA</h1>
+<h1>AAA</h1>
+<h1>AAA</h1>
+<h1>AAA</h1>
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+</script>
+
+<script>
+//******사용법******
+//1. jquery에 비해 쌩으로 js 코딩하는게 복잡하고 라인수가 많다는 것을 보여줌
+//2. jqeury는 직관적으로 함수를 이용하여 태그에 변화를 줄수 있음
+//3. jquery는 많이 사용하게 되면 느리다는 얘기가 있음.
+//4. 잘 사용하지 못하는 사람의 변명이라는 말도 있음
+
+
+//******querySelector******
+//1개씩 주석 처리 해제하세요
+     const aaa = document.querySelector("h1") //h1 태그를 선택하는 변수 aaa 선언. ???여러개의 h1 태그 중 1개만 선택
+     aaa.innerHTML ="BBB" //h1 태그의 내용을 BBB로 바꿈
+
+//******querySelectorAll******
+//1개씩 주석 처리 해제하세요
+//1. querySelectorAll 배열을 반환함.
+//2. aaa는 배열임. aaa를 핸들링하기 위해서 index 번호 사용해야 함
+
+
+    // const bbb = document.querySelectorAll("h1")
+
+    // aaa[0].innerHTML ="BBB" //h1 태그의 내용을 BBB로 바꿈
+    // aaa[1].innerHTML ="BBB" //h1 태그의 내용을 BBB로 바꿈
+    // aaa[2].innerHTML ="BBB" //h1 태그의 내용을 BBB로 바꿈
+    // aaa[3].innerHTML ="BBB" //h1 태그의 내용을 BBB로 바꿈
+    // aaa[4].innerHTML ="BBB" //h1 태그의 내용을 BBB로 바꿈
+
+//******jquery 사용법******
+//1. querySelectorAll와 동일한 역할
+
+//2. bbb는 배열임. 배열 bbb index 번호를 파라 미터로 접근 가능
+// const bbb =  $("h1")
+// bbb[0].innerHTML ="BBB"
+// bbb[1].innerHTML ="BBB"
+// bbb[2].innerHTML ="BBB"
+// bbb[3].innerHTML ="BBB"
+// bbb[4].innerHTML ="BBB"
+
+
+//3. get() 사용법. get에 index 번호를 파라 미터로 접근 가능
+
+    // const bbb =  $("h1")
+    // bbb.get(0).innerHTML ="BBB"
+    // bbb.get(1).innerHTML ="BBB"
+    // bbb.get(2).innerHTML ="BBB"
+    // bbb.get(3).innerHTML ="BBB"
+    // bbb.get(4).innerHTML ="BBB"
+
+
+
+//4. html() 사용법. 배열 bbb 모든 요소에 대해서 html 파라미터로 전달하는 요소로 내용 변경
+
+    // bbb.html("BBB")
+
+
+
+
+</script>
+
+
+</body>
+</html>
